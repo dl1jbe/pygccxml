@@ -285,7 +285,6 @@ class scanner_t(xml.sax.handler.ContentHandler):
         return self.__members
 
     def startElement(self, name, attrs):
-
         try:
             if name not in self.__readers:
                 return
